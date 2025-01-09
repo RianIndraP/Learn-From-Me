@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Detail - EduLearn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold">EduLearn</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="course_material_page.html" class="hover:underline">Courses</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Lesson Content Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800">Lesson 1: Introduction to HTML</h2>
+            <p class="mt-4 text-gray-600">Learn the basics of HTML and how it is used to structure content on the web.
+            </p>
+
+            <!-- Content -->
+            <div class="mt-10 space-y-6">
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-2xl font-semibold text-gray-800">What is HTML?</h3>
+                    <p class="mt-2 text-gray-600">HTML (HyperText Markup Language) is the standard markup language for
+                        creating web pages. It describes the structure of a web page and consists of elements that
+                        define different parts of the content.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-2xl font-semibold text-gray-800">Basic HTML Tags</h3>
+                    <ul class="mt-2 text-gray-600 list-disc list-inside">
+                        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings</li>
+                        <li><code>&lt;p&gt;</code>: Paragraph</li>
+                        <li><code>&lt;a&gt;</code>: Anchor (Links)</li>
+                        <li><code>&lt;img&gt;</code>: Images</li>
+                        <li><code>&lt;div&gt;</code>: Division</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-2xl font-semibold text-gray-800">Example</h3>
+                    <pre class="bg-gray-200 p-4 rounded text-sm overflow-auto">
+                        <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;title&gt;My First HTML Page&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+                                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                                &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="mt-10 flex justify-between">
+                <button class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400"
+                    onclick="window.location.href='course_material_page.html'">Back to Courses</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">Next Lesson</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
